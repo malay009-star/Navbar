@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Nastaliq+Urdu&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+*,
+::after,
+::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Poppins, sans-serif;
+}
+
+nav {
+  background-color: #0e1429;
+  color: white;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+}
+
+#btn {
+  display: inline-block;
+  border-radius: 10px;
+  color: #080b17;
+  font-weight: 500;
+  font-size: 16px;
+  width: 150px;
+  height: 60px;
+  background: linear-gradient(
+    157.81deg,
+    #def9fa -43.27%,
+    #bef3f5 -21.24%,
+    #9dedf0 12.19%,
+    #7de7eb 29.82%,
+    #5ce1e6 51.94%,
+    #33bbcf 90.29%
+  );
+}
+
+#btn:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
+  #btn {
+    width: 140px;
+    height: 55px;
+  }
+  #btn:hover {
+    width: 150px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 368px) {
+  #btn {
+    font-weight: 500;
+    padding: 11px 11px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .equal_spacing {
+    padding: 8rem 0rem;
+  }
+}
+
+header {
+  height: 6.8rem;
+}
+
+header #logo img {
+  flex-grow: 3;
+  cursor: pointer;
+  width: 124px;
+}
+
+header li {
+  margin-left: 2rem;
+  width: 71px;
+  height: 21px;
+  text-align: center;
+}
+
+header a {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+header li:hover {
+  transition: transform 0.3s;
+  transform: scale(1.1);
+  color: #5ce1e6;
+}
+
+header #nav-burger {
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+}
+
+header .is-open {
+  left: 0%;
+}
+
+@media (max-width: 800px) {
+  header ul {
+    z-index: 1;
+    background-color: #43c9dd;
+    position: fixed;
+    top: 19%;
+    width: 100%;
+    height: 400px;
+    left: -100%;
+    display: flex;
+    border-radius: 0.25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    transition: all 0.3s linear;
+  }
+  header li {
+    margin-left: 0rem;
+  }
+  header a {
+    color: #080b17;
+    font-weight: 500;
+  }
+  header a:hover {
+    color: rgb(19, 18, 18);
+  }
+  header #nav-burger {
+    display: block;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 368px) {
+  header a {
+    font-size: 16px;
+  }
+  header #logo img {
+    width: 115px;
+  }
+}
